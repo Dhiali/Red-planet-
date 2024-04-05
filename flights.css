@@ -1,0 +1,1057 @@
+.header-heading {
+    position: absolute;
+    bottom: 10px; /* Adjust the distance from the bottom */
+    top: 150px;
+    left: 300px; /* Adjust the distance from the left */
+    color: rgb(255, 255, 255); /* Adjust text color */
+    margin: 0; /* Remove default margin */
+    font-size: 50px; /* Adjust font size as needed */
+    font-family: 'Porter Sans Block', sans-serif;
+  }
+  
+  .logo img {
+    width: 250px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 100px; /* Adjust margin as needed */
+}
+
+
+
+nav {
+    position: absolute;
+    top: 20px; /* Adjust the value as needed */
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent white color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 25px; /* Adjust border radius for a rounder shape */
+    text-align: center; /* Center the content horizontally */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+a.active {
+    color: red; /* Set color to red */
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    
+}
+
+li {
+    margin-right: 20px; /* Adjust margin between navigation items */
+}
+
+a {
+    text-decoration: none;
+    color: black; /* Adjust text color */
+}
+
+a:hover {
+    color: red; /* Adjust text color on hover */
+}
+
+header {
+    background-image: url('assets/headerbackBack.png'); /* Replace 'background-image.jpg' with your image file */
+    background-size: cover;
+    background-position: center;
+    height: 55vh; /* Set the height of the header to 100% of the viewport height */
+    padding: 20px;
+    position: relative; /* Ensure positioning context for absolute elements */} 
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.divider {
+    width: 1px;
+    height: 20px; /* Adjust height as needed */
+    background-color: #ccc; /* Adjust color as needed */
+    margin: 0 10px; /* Adjust margin as needed */
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: 100px; 
+}
+
+
+
+.button-group {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 5px; /* Adjust margin between input and button */
+}
+
+.search-bar button {
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.basket-button {
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.basket-button .fa-shopping-basket {
+    color: black;
+}
+
+.item-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 4px;
+    font-size: 12px;
+}
+
+.small-text {
+    display: flex;
+  }
+  
+  .original-price,
+  .discounted-price {
+    margin-right: 20px; /* Adjust the space between prices */
+  }
+  
+
+.info-section6 {
+    background-color: #fefdfe;; /* Set background color */
+    padding: 50px 0; /* Add padding */
+}
+
+.info-section6 .container {
+    display: flex;
+    align-items: center;
+}
+
+.info-section6 .image {
+    flex: 1;
+    text-align: center;
+}
+
+.info-section6 .image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.info-section6 .content {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.info-section6 h3 {
+    font-size: 40px;
+    color: #050505;
+    margin-top: 10px;
+}
+
+.info-section6 .small-text {
+    font-size: 18px;
+    color: rgb(114, 114, 114);
+}
+
+/* Adjust the color of the stars */
+.rating6 span i {
+    color: rgb(91, 92, 9);
+    margin-right: 5px;
+}
+
+/* Add styling for the vertical line */
+.vertical-line6 {
+    border-left: 1px solid #080808;
+    height: 15px; /* Adjust the height as needed */
+    margin: 0 10px; /* Adjust the spacing as needed */
+}
+
+.info-section6 .rating {
+    margin-top: 10px;
+    
+}
+
+.info-section6 .rating span {
+    margin-right: 5px;
+}
+
+.info-section6 .customer-reviews {
+    color: #888;
+    margin-left: 10px;
+}
+
+.info-section6 p {
+    font-size: 16px;
+    color: #000000;
+    margin-top: 10px;
+}
+/* Your existing CSS */
+
+.quantity-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.quantity-button:hover {
+    background-color: darkred;
+}
+
+.info-section6 .quantity-button.minus {
+    margin-right: 10px; /* Add space between minus sign and number */
+}
+
+
+.quantity-button.plus {
+    margin-left: 0; /* Remove margin left for the plus button */
+}
+
+.info-section6 .button-group {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.info-section6 .quantity-button,
+.info-section6 .red-button {
+    background-color: #490a67(103, 217, 246);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.info-section6 .red-button {
+    background-color: red;
+}
+
+.info-section6 hr {
+    border: none;
+    border-top: 2px solid #070707;
+    margin-top: 40px;
+}
+
+.info-section6 .details {
+    margin-top: 10px;
+    margin-left: auto; /* Move the details to the right */
+    width: auto; /* Set width to auto to fit the content */
+    margin-right: 20px; /* Adjust margin-right as needed */
+}
+
+
+
+.info-section5 {
+    background-color: #490a67;; /* Set background color */
+    padding: 50px 0; /* Add padding */
+}
+
+.info-section5 .container {
+    display: flex;
+    align-items: center;
+}
+
+.info-section5 .image {
+    flex: 1;
+    text-align: center;
+}
+
+.info-section5 .image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.info-section5 .content {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.info-section5 h3 {
+    font-size: 40px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.info-section5 .small-text {
+    font-size: 18px;
+    color: rgb(103, 217, 246);
+}
+
+/* Adjust the color of the stars */
+.rating span i {
+    color: yellow;
+    margin-right: 5px;
+}
+
+/* Add styling for the vertical line */
+.vertical-line {
+    border-left: 1px solid #ccc;
+    height: 15px; /* Adjust the height as needed */
+    margin: 0 10px; /* Adjust the spacing as needed */
+}
+
+.info-section5 .rating {
+    margin-top: 10px;
+    
+}
+
+.info-section5 .rating span {
+    margin-right: 5px;
+}
+
+.info-section5 .customer-reviews {
+    color: #888;
+    margin-left: 10px;
+}
+
+.info-section5 p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+/* Your existing CSS */
+
+.quantity-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.quantity-button:hover {
+    background-color: darkred;
+}
+
+.info-section5 .quantity-button.minus {
+    margin-right: 10px; /* Add space between minus sign and number */
+}
+
+
+.quantity-button.plus {
+    margin-left: 0; /* Remove margin left for the plus button */
+}
+
+.info-section5 .button-group {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.info-section5 .quantity-button,
+.info-section5 .red-button {
+    background-color: rgb(103, 217, 246);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.info-section5 .red-button {
+    background-color: red;
+}
+
+.info-section5 hr {
+    border: none;
+    border-top: 2px solid #ffffff;
+    margin-top: 40px;
+}
+
+.info-section5 .details {
+    margin-top: 10px;
+    margin-left: auto; /* Move the details to the right */
+    width: auto; /* Set width to auto to fit the content */
+    margin-right: 20px; /* Adjust margin-right as needed */
+}
+
+
+.info-section4 {
+    background-color: #fefdfe;; /* Set background color */
+    padding: 50px 0; /* Add padding */
+}
+
+.info-section4 .container {
+    display: flex;
+    align-items: center;
+}
+
+.info-section4 .image {
+    flex: 1;
+    text-align: center;
+}
+
+.info-section4 .image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.info-section4 .content {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.info-section4 h3 {
+    font-size: 40px;
+    color: #050505;
+    margin-top: 10px;
+}
+
+.info-section4 .small-text {
+    font-size: 18px;
+    color: rgb(114, 114, 114);
+}
+
+/* Adjust the color of the stars */
+.rating4 span i {
+    color: rgb(91, 92, 9);
+    margin-right: 5px;
+}
+
+/* Add styling for the vertical line */
+.vertical-line4 {
+    border-left: 1px solid #080808;
+    height: 15px; /* Adjust the height as needed */
+    margin: 0 10px; /* Adjust the spacing as needed */
+}
+
+.info-section4 .rating {
+    margin-top: 10px;
+    
+}
+
+.info-section4 .rating span {
+    margin-right: 5px;
+}
+
+.info-section4 .customer-reviews {
+    color: #888;
+    margin-left: 10px;
+}
+
+.info-section4 p {
+    font-size: 16px;
+    color: #000000;
+    margin-top: 10px;
+}
+/* Your existing CSS */
+
+.quantity-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.quantity-button:hover {
+    background-color: darkred;
+}
+
+.info-section4 .quantity-button.minus {
+    margin-right: 10px; /* Add space between minus sign and number */
+}
+
+
+.quantity-button.plus {
+    margin-left: 0; /* Remove margin left for the plus button */
+}
+
+.info-section4 .button-group {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.info-section4 .quantity-button,
+.info-section4 .red-button {
+    background-color: #490a67(103, 217, 246);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.info-section4 .red-button {
+    background-color: red;
+}
+
+.info-section4 hr {
+    border: none;
+    border-top: 2px solid #070707;
+    margin-top: 40px;
+}
+
+.info-section4 .details {
+    margin-top: 10px;
+    margin-left: auto; /* Move the details to the right */
+    width: auto; /* Set width to auto to fit the content */
+    margin-right: 20px; /* Adjust margin-right as needed */
+}
+
+
+
+.info-section3 {
+    background-color: #490a67;; /* Set background color */
+    padding: 50px 0; /* Add padding */
+}
+
+.info-section3 .container {
+    display: flex;
+    align-items: center;
+}
+
+.info-section3 .image {
+    flex: 1;
+    text-align: center;
+}
+
+.info-section3 .image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.info-section3 .content {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.info-section3 h3 {
+    font-size: 40px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.info-section3 .small-text {
+    font-size: 18px;
+    color: rgb(103, 217, 246);
+}
+
+/* Adjust the color of the stars */
+.rating span i {
+    color: yellow;
+    margin-right: 5px;
+}
+
+/* Add styling for the vertical line */
+.vertical-line {
+    border-left: 1px solid #ccc;
+    height: 15px; /* Adjust the height as needed */
+    margin: 0 10px; /* Adjust the spacing as needed */
+}
+
+.info-section3 .rating {
+    margin-top: 10px;
+    
+}
+
+.info-section3 .rating span {
+    margin-right: 5px;
+}
+
+.info-section3 .customer-reviews {
+    color: #888;
+    margin-left: 10px;
+}
+
+.info-section3 p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+/* Your existing CSS */
+
+.quantity-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.quantity-button:hover {
+    background-color: darkred;
+}
+
+.info-section3 .quantity-button.minus {
+    margin-right: 10px; /* Add space between minus sign and number */
+}
+
+
+.quantity-button.plus {
+    margin-left: 0; /* Remove margin left for the plus button */
+}
+
+.info-section3 .button-group {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.info-section3 .quantity-button,
+.info-section3 .red-button {
+    background-color: rgb(103, 217, 246);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.info-section3 .red-button {
+    background-color: red;
+}
+
+.info-section3 hr {
+    border: none;
+    border-top: 2px solid #ffffff;
+    margin-top: 40px;
+}
+
+.info-section3 .details {
+    margin-top: 10px;
+    margin-left: auto; /* Move the details to the right */
+    width: auto; /* Set width to auto to fit the content */
+    margin-right: 20px; /* Adjust margin-right as needed */
+}
+
+
+
+.info-section2 {
+    background-color: #ffffff;; /* Set background color */
+    padding: 50px 0; /* Add padding */
+}
+
+.info-section2 .container2 {
+    display: flex;
+    align-items: center;
+}
+
+.info-section2 .image {
+    flex: 1;
+    text-align: center;
+}
+
+.info-section2 .image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.info-section2 .content {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.info-section2 h3 {
+    font-size: 40px;
+    color: #050505;
+    margin-top: 10px;
+}
+
+.info-section2 .small-text2 {
+    font-size: 18px;
+    color: rgb(120, 124, 125);
+}
+
+/* Adjust the color of the stars */
+.rating2 span i {
+    color: rgb(187, 190, 9);
+    margin-right: 5px;
+}
+
+/* Add styling for the vertical line */
+.vertical-line {
+    border-left: 1px solid #ccc;
+    height: 15px; /* Adjust the height as needed */
+    margin: 0 10px; /* Adjust the spacing as needed */
+}
+
+.info-section2 .rating {
+    margin-top: 10px;
+    
+}
+
+.info-section2 .rating span {
+    margin-right: 5px;
+}
+
+.info-section2 .customer-reviews {
+    color: #888;
+    margin-left: 10px;
+}
+
+.info-section2 p {
+    font-size: 16px;
+    color: #000000;
+    margin-top: 10px;
+}
+/* Your existing CSS */
+
+.quantity-button2 {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.quantity-button2hover {
+    background-color: red;
+}
+
+.quantity-button.minus2 {
+    margin-right: 0; /* Remove margin right for the minus button */
+}
+
+.quantity-button.plus2 {
+    margin-left: 0; /* Remove margin left for the plus button */
+}
+
+.info-section2 .button-group {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.info-section2 .quantity-button,
+.info-section2 .red-button {
+    background-color: red(103, 217, 246);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.info-section2 .red-button {
+    background-color: red;
+}
+
+.info-section2 hr {
+    border: none;
+    border-top: 1.5px solid #060505;
+    margin-top: 40px;
+}
+
+.info-section2 .details {
+    margin-top: 10px;
+    margin-left: auto; /* Move the details to the right */
+    width: auto; /* Set width to auto to fit the content */
+    margin-right: 20px; /* Adjust margin-right as needed */
+}
+
+
+  
+  .info-section {
+    background-color: #490a67;; /* Set background color */
+    padding: 50px 0; /* Add padding */
+}
+
+.info-section .container {
+    display: flex;
+    align-items: center;
+}
+
+.info-section .image {
+    flex: 1;
+    text-align: center;
+}
+
+.info-section .image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.info-section .content {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.info-section h3 {
+    font-size: 40px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.info-section .small-text {
+    font-size: 18px;
+    color: rgb(103, 217, 246);
+}
+
+/* Adjust the color of the stars */
+.rating span i {
+    color: yellow;
+    margin-right: 5px;
+}
+
+/* Add styling for the vertical line */
+.vertical-line {
+    border-left: 1px solid #ccc;
+    height: 15px; /* Adjust the height as needed */
+    margin: 0 10px; /* Adjust the spacing as needed */
+}
+
+.info-section .rating {
+    margin-top: 10px;
+    
+}
+
+.info-section .rating span {
+    margin-right: 5px;
+}
+
+.info-section .customer-reviews {
+    color: #888;
+    margin-left: 10px;
+}
+
+.info-section p {
+    font-size: 16px;
+    color: #f8f6f6;
+    margin-top: 10px;
+}
+/* Your existing CSS */
+
+.quantity-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.quantity-button:hover {
+    background-color: darkred;
+}
+
+.quantity-button.minus {
+    margin-right: 0; /* Remove margin right for the minus button */
+}
+
+.quantity-button.plus {
+    margin-left: 0; /* Remove margin left for the plus button */
+}
+
+.info-section .button-group {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.info-section .quantity-button,
+.info-section .red-button {
+    background-color: rgb(103, 217, 246);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.info-section .red-button {
+    background-color: red;
+}
+
+.info-section hr {
+    border: none;
+    border-top: 2px solid #ffffff;
+    margin-top: 40px;
+}
+
+.info-section .details {
+    margin-top: 10px;
+    margin-left: auto; /* Move the details to the right */
+    width: auto; /* Set width to auto to fit the content */
+    margin-right: 20px; /* Adjust margin-right as needed */
+}
+
+
+
+.view-cart-button {
+    position: absolute;
+    top: 4550px; /* Adjust the distance from the bottom */
+    right: 20px; /* Adjust the distance from the right */
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.footer {
+    background-color: #ffffff; /* Footer background color */
+    color: #050505; /* Footer text color */
+    padding: 50px 120px; /* Add padding top and bottom, adjust left and right padding */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+}
+.footer {
+    background-color: #ffffff; /* Footer background color */
+    color: #050505; /* Footer text color */
+    padding: 50px 120px; /* Add padding top and bottom, adjust left and right padding */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.footer-well {
+    flex: 0 0 calc(33.33% - 20px); /* Set flex basis to 33.33% with margin */
+    margin-right: 20px; /* Add margin between wells */
+}
+
+.footer-well:last-child {
+    margin-right: 0; /* Remove margin from the last well */
+}
+
+.footer-well h4 {
+    margin-bottom: 10px; /* Add margin below headings */
+}
+
+.footer-logo {
+    width: 1000px; /* Adjust logo width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px; /* Add margin top */
+}
+
+.footer-left {
+    flex: 1; /* Take up remaining space */
+}
+
+.footer-right {
+    flex: 1; /* Take up remaining space */
+    text-align: right;
+}
+
+.footer-bottom hr {
+    border-color: #fff; /* Line color */
+    margin: 5px 0; /* Add margin top and bottom */
+}
+
+/* Adjust social media icons */
+.footer-well img {
+    width: 50px; /* Set the width of social media icons */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 5px; /* Add margin between icons */
+}
+
+.footer-well {
+    flex: 0 0 calc(33.33% - 20px); /* Set flex basis to 33.33% with margin */
+    margin-right: 20px; /* Add margin between wells */
+}
+
+.footer-well:last-child {
+    margin-right: 0; /* Remove margin from the last well */
+}
+
+.footer-well h4 {
+    margin-bottom: 10px; /* Add margin below headings */
+}
+
+.footer-logo {
+    width: 1000px; /* Adjust logo width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px; /* Add margin top */
+}
+
+.footer-left {
+    flex: 1; /* Take up remaining space */
+}
+
+.footer-right {
+    flex: 1; /* Take up remaining space */
+    text-align: right;
+}
+
+.footer-bottom hr {
+    border-color: #fff; /* Line color */
+    margin: 5px 0; /* Add margin top and bottom */
+}
+
+/* Adjust social media icons */
+.footer-well img {
+    width: 50px; /* Set the width of social media icons */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 5px; /* Add margin between icons */
+}
