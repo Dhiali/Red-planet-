@@ -1,14 +1,14 @@
 .header-heading {
     position: absolute;
-    bottom: 10px; 
-    top: 150px;
-    left: 300px; 
+    top: 290%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
     color: rgb(255, 255, 255); 
     margin: 0; 
     font-size: 50px; 
     font-family: 'Porter Sans Block', sans-serif;
-  }
-  
+}
+ 
   .logo img {
     width: 250px; 
     height: auto; 
@@ -63,6 +63,28 @@ header {
     padding: 20px;
     position: relative; } 
 
+
+    
+    .filter-section {
+        background-color: #3d0764;
+        padding: 10px 20px; /* Adjusted padding for better spacing */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        color: white;
+    }
+    
+    .filter-section button,
+    .filter-section select {
+        background-color: #5e2b97;
+        border: none;
+        color: white;
+        padding: 10px 20px; /* Adjusted padding for better spacing */
+        cursor: pointer;
+        margin-left: 10px; /* Added margin for better spacing between buttons */
+    }
+    
 
 
 .container {
@@ -952,17 +974,6 @@ header {
     justify-content: space-between;
     align-items: flex-start; 
 }
-.footer {
-    background-color: #ffffff; 
-    color: #050505;
-    padding: 50px 120px; 
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; 
-}
 
 .footer-well {
     flex: 0 0 calc(33.33% - 20px); 
@@ -978,7 +989,7 @@ header {
 }
 
 .footer-logo {
-    width: 1000px; 
+    width: 250px; /* Adjusted to be 5 times bigger */
     height: auto; 
 }
 
@@ -1003,55 +1014,8 @@ header {
     margin: 5px 0; 
 }
 
-
-.footer-well img {
-    width: 50px; 
-    height: auto; 
-    margin-right: 5px; 
-}
-
-.footer-well {
-    flex: 0 0 calc(33.33% - 20px); 
-    margin-right: 20px; 
-}
-
-.footer-well:last-child {
-    margin-right: 0; 
-}
-
-.footer-well h4 {
-    margin-bottom: 10px; 
-}
-
-.footer-logo {
-    width: 1000px; 
-    height: auto; 
-}
-
-.footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px; 
-}
-
-.footer-left {
-    flex: 1; 
-}
-
-.footer-right {
-    flex: 1; 
-    text-align: right;
-}
-
-.footer-bottom hr {
-    border-color: #fff; 
-    margin: 5px 0; 
-}
-
-
-.footer-well img {
-    width: 50px; 
+.footer-icon {
+    width: 30px; /* Adjust the size of social media icons */
     height: auto; 
     margin-right: 5px; 
 }

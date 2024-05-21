@@ -188,17 +188,32 @@ p {
     height: auto;
 }
 
-.social-media-section {
-    padding: 50px 0;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Adjust padding as needed */
+}
+
+.social-media-maps-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.social-media-section, .maps-section {
+    flex: 1 1 100%; /* Ensure sections take full width on small screens */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .social-media-content {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
+    max-width: 100%;
+    text-align: left; /* Align content to the left */
+    margin-bottom: 20px;
 }
 
-.social-media-content .small-text {
+.social-media-content .small-text3 {
     font-size: 14px;
     color: #888;
 }
@@ -210,7 +225,9 @@ p {
 }
 
 .social-media-icons {
-    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
 }
 
 .social-media-icons img {
@@ -221,18 +238,17 @@ p {
 
 .maps-section {
     padding: 50px 0;
-    background-color: #f9f9f9; 
-    margin-bottom: 20px; 
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    text-align: center; /* Center align map content */
 }
-
 
 .maps-content {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
+    max-width: 100%;
+    text-align: left; /* Align content to the left */
 }
 
-.maps-content .small-text {
+.maps-content .small-text2 {
     font-size: 14px;
     color: #888;
 }
@@ -325,24 +341,9 @@ p {
 }
 
 
-
-
-
-
 .footer {
     background-color: #ffffff; 
     color: #050505; 
-    padding: 50px 120px; 
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; 
-}
-.footer {
-    background-color: #ffffff; 
-    color: #050505;
     padding: 50px 120px; 
 }
 
@@ -366,7 +367,7 @@ p {
 }
 
 .footer-logo {
-    width: 1000px; 
+    width: 250px; /* Adjusted to be 5 times bigger */
     height: auto; 
 }
 
@@ -391,55 +392,8 @@ p {
     margin: 5px 0; 
 }
 
-
-.footer-well img {
-    width: 50px; 
-    height: auto; 
-    margin-right: 5px; 
-}
-
-.footer-well {
-    flex: 0 0 calc(33.33% - 20px); 
-    margin-right: 20px; 
-}
-
-.footer-well:last-child {
-    margin-right: 0; 
-}
-
-.footer-well h4 {
-    margin-bottom: 10px; 
-}
-
-.footer-logo {
-    width: 1000px; 
-    height: auto; 
-}
-
-.footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px; 
-}
-
-.footer-left {
-    flex: 1; 
-}
-
-.footer-right {
-    flex: 1; 
-    text-align: right;
-}
-
-.footer-bottom hr {
-    border-color: #fff; 
-    margin: 5px 0; 
-}
-
-
-.footer-well img {
-    width: 50px; 
+.footer-icon {
+    width: 30px; /* Adjust the size of social media icons */
     height: auto; 
     margin-right: 5px; 
 }
