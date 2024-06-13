@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const name = flightItem.querySelector('h3').textContent;
             const price = parseFloat(flightItem.querySelector('p').textContent.replace('R ', '').replace(',', ''));
             const image = flightItem.querySelector('img').src;
-            addOrUpdateCartItem(id, name, price, image, 0);  // Ensures at least one ticket is added
+            addOrUpdateCartItem(id, name, price, image, 0); 
             cartModal.style.display = 'block';
         });
     });
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     checkoutButton.addEventListener('click', () => {
-        window.location.href = '../pages/index.html'; 
+        window.location.href = 'index.html'; 
     });
 
     cartItems.addEventListener('click', (event) => {
@@ -138,53 +138,17 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.querySelector('#contactForm');
     form.addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent default form submission
-        // You can add AJAX submission here if needed
+        event.preventDefault(); 
 
-        // Show success modal
+      
         const successModal = new bootstrap.Modal(document.getElementById('successModal'));
         successModal.show();
 
-        // Reset the form after submission (optional)
+   
         form.reset();
     });
 });
 
-
-  document.addEventListener('DOMContentLoaded', function () {
-    const slides = document.querySelectorAll('.slide');
-    const prev = document.querySelector('.prev');
-    const next = document.querySelector('.next');
-    let currentSlide = 0;
-
-    // Show the first slide initially
-    slides[currentSlide].classList.add('active');
-
-    // Function to hide all slides
-    function hideAllSlides() {
-      slides.forEach(slide => {
-        slide.classList.remove('active');
-      });
-    }
-
-    // Function to show the current slide
-    function showSlide() {
-      hideAllSlides();
-      slides[currentSlide].classList.add('active');
-    }
-
-    // Next button click event
-    next.addEventListener('click', function () {
-      currentSlide = (currentSlide + 1) % slides.length;
-      showSlide();
-    });
-
-    // Previous button click event
-    prev.addEventListener('click', function () {
-      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-      showSlide();
-    });
-  });
 
 
   document.addEventListener("DOMContentLoaded", function () {
@@ -282,10 +246,10 @@ document.addEventListener('DOMContentLoaded', function () {
       },
     ];
   
-    // Initial render
+
     renderTrips(trips);
   
-    // Function to render trips
+ 
     function renderTrips(trips) {
       const tripsContainer = document.getElementById("trips-container");
       tripsContainer.innerHTML = "";
@@ -330,7 +294,7 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
   
-    // Function to generate star icons based on rating
+   
     function generateStarsHTML(rating) {
       const fullStars = Math.floor(rating);
       const halfStar = rating % 1 !== 0;
@@ -358,7 +322,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
         let showTrip = true;
   
-        // Filter by price
+    
         if (sortOption === "price-asc") {
           showTrip = parseInt(price.split("R ")[1]) >= 15000;
         } else if (sortOption === "price-desc") {

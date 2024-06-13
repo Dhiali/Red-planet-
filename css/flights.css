@@ -7,12 +7,12 @@
     margin: 0; 
     font-size: 40px; 
     font-family: 'Porter Sans Block', sans-serif;
-    white-space: nowrap; /* Prevents the text from wrapping to a new line */
+    white-space: nowrap; 
 }
-/* Ensure the container has enough width */
+
 .header-container {
     width: 100%;
-    text-align: center; /* Centers the text horizontally within the container */
+    text-align: center; 
 }
  
   .logo img {
@@ -1177,7 +1177,7 @@ header {
 .footer-well {
     flex: 0 0 calc(33.33% - 20px); 
     margin-right: 20px; 
-    color: #050505; /* Ensuring the text color is black */
+    color: #050505; 
    
     
 }
@@ -1191,7 +1191,7 @@ header {
 }
 
 .footer-logo {
-    width: 250px; /* Adjusted to be 5 times bigger */
+    width: 250px;
     height: auto; 
 }
 
@@ -1219,14 +1219,13 @@ header {
 }
 
 .footer-icon {
-    width: 60px; /* Adjust the size of social media icons */
+    width: 60px; 
     height: auto; 
     margin-right: 5px; 
 }
 
 .footer-well p {
-    color: #050505; /* Ensuring the text color is black */
-    
+    color: #050505; 
 }
 footer .company-info {
   display: flex;
@@ -1234,9 +1233,9 @@ footer .company-info {
   margin: 5px 0;
 }
 .footer-company li {
-  list-style-type: none; /* Removes the bullets */
+  list-style-type: none; 
   padding: 0;
-  margin: 0 0 10px 0; /* Adds spacing between the links */
+  margin: 0 0 10px 0; 
 }
 
 

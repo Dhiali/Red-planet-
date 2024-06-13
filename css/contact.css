@@ -189,7 +189,7 @@ p {
     height: auto;
 }
 
-/* Container styles */
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -197,7 +197,7 @@ p {
     margin-bottom: 50px;
 }
 
-/* Social Media and Maps Section styles */
+
 .social-media-section, .maps-section {
     margin-bottom: 30px;
    
@@ -248,7 +248,7 @@ p {
     background-color: darkred;
 }
 
-/* Contact Form Section styles */
+
 .contact-form-section {
     background-image: url('assets/formBack.png');
     background-size: cover;
@@ -259,8 +259,8 @@ p {
 }
 
 .contact-form-content {
-    max-width: 100%; /* Adjust the width to use the entire column */
-    margin: 0 auto; /* Center the content horizontally */
+    max-width: 100%;
+    margin: 0 auto; 
     padding-left:20px;
     padding-right:20px;
     padding-bottom:20px;
@@ -281,7 +281,7 @@ p {
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group textarea {
-    width: 80%; /* Use full width of the form */
+    width: 80%; 
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -326,7 +326,7 @@ p {
 .footer-well {
     flex: 0 0 calc(33.33% - 20px); 
     margin-right: 20px; 
-    color: #050505; /* Ensuring the text color is black */
+    color: #050505; 
    
     
 }
@@ -340,7 +340,7 @@ p {
 }
 
 .footer-logo {
-    width: 250px; /* Adjusted to be 5 times bigger */
+    width: 250px; 
     height: auto; 
 }
 
@@ -368,13 +368,13 @@ p {
 }
 
 .footer-icon {
-    width: 60px; /* Adjust the size of social media icons */
+    width: 60px; 
     height: auto; 
     margin-right: 5px; 
 }
 
 .footer-well p {
-    color: #050505; /* Ensuring the text color is black */
+    color: #050505; 
     
 }
 footer .company-info {
@@ -383,7 +383,7 @@ footer .company-info {
   margin: 5px 0;
 }
 .footer-company li {
-  list-style-type: none; /* Removes the bullets */
+  list-style-type: none; 
   padding: 0;
-  margin: 0 0 10px 0; /* Adds spacing between the links */
+  margin: 0 0 10px 0; 
 }
