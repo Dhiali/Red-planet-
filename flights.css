@@ -1,12 +1,18 @@
 .header-heading {
     position: absolute;
-    top: 290%;
+    top: 250%;
     left: 50%; 
     transform: translate(-50%, -50%); 
     color: rgb(255, 255, 255); 
     margin: 0; 
-    font-size: 50px; 
+    font-size: 40px; 
     font-family: 'Porter Sans Block', sans-serif;
+    white-space: nowrap; /* Prevents the text from wrapping to a new line */
+}
+/* Ensure the container has enough width */
+.header-container {
+    width: 100%;
+    text-align: center; /* Centers the text horizontally within the container */
 }
  
   .logo img {
@@ -235,9 +241,8 @@ header {
     margin-top: 10px;
 }
 
-
-.quantity-button {
-    background-color: red;
+.quantity-button6 {
+    background-color:   #490a67;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -247,8 +252,15 @@ header {
     margin-right: 10px;
 }
 
-.quantity-button:hover {
-    background-color: darkred;
+.quantity-display6 {
+    background-color:  #490a67;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
 }
 
 .info-section6 .quantity-button.minus {
@@ -266,7 +278,7 @@ header {
     margin-top: 20px;
 }
 
-.info-section6 .quantity-button,
+.info-section6 .quantity-display,
 .info-section6 .red-button {
     background-color: #490a67(103, 217, 246);
     color: white;
@@ -367,8 +379,8 @@ header {
 }
 
 
-.quantity-button {
-    background-color: red;
+.quantity-button5 {
+    background-color:  rgb(103, 217, 246);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -378,8 +390,15 @@ header {
     margin-right: 10px;
 }
 
-.quantity-button:hover {
-    background-color: darkred;
+.quantity-display5 {
+    background-color:  rgb(103, 217, 246);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
 }
 
 .info-section5 .quantity-button.minus {
@@ -397,7 +416,7 @@ header {
     margin-top: 20px;
 }
 
-.info-section5 .quantity-button,
+.info-section5 .quantity-button2,
 .info-section5 .red-button {
     background-color: rgb(103, 217, 246);
     color: white;
@@ -496,9 +515,8 @@ header {
     margin-top: 10px;
 }
 
-
-.quantity-button {
-    background-color: red;
+.quantity-button4 {
+    background-color:  #490a67;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -508,9 +526,17 @@ header {
     margin-right: 10px;
 }
 
-.quantity-button:hover {
-    background-color: darkred;
+.quantity-display4 {
+    background-color:  #490a67;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
 }
+
 
 .info-section4 .quantity-button.minus {
     margin-right: 10px; 
@@ -628,8 +654,8 @@ header {
 }
 
 
-.quantity-button {
-    background-color: red;
+.quantity-button3 {
+    background-color:  rgb(103, 217, 246);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -639,8 +665,15 @@ header {
     margin-right: 10px;
 }
 
-.quantity-button:hover {
-    background-color: darkred;
+.quantity-display3 {
+    background-color:  rgb(103, 217, 246);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
 }
 
 .info-section3 .quantity-button.minus {
@@ -727,7 +760,7 @@ header {
 
 
 .rating2 span i {
-    color: rgb(187, 190, 9);
+    color: yellow;
     margin-right: 5px;
 }
 
@@ -760,7 +793,7 @@ header {
 
 
 .quantity-button2 {
-    background-color: red;
+    background-color:  #490a67;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -770,9 +803,18 @@ header {
     margin-right: 10px;
 }
 
-.quantity-button2hover {
-    background-color: red;
+.quantity-display2 {
+    background-color:  #490a67; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
 }
+
+
 
 .quantity-button.minus2 {
     margin-right: 0; 
@@ -820,7 +862,7 @@ header {
 
   
   .info-section {
-    background-color: #490a67;; 
+    background-color: #490a67; 
     padding: 50px 0; 
 }
 
@@ -889,8 +931,8 @@ header {
 }
 
 
-.quantity-button {
-    background-color: red;
+.quantity-display1 {
+    background-color: rgb(103, 217, 246);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -900,9 +942,6 @@ header {
     margin-right: 10px;
 }
 
-.quantity-button:hover {
-    background-color: darkred;
-}
 
 .quantity-button.minus {
     margin-right: 0; 
@@ -918,7 +957,7 @@ header {
     margin-top: 20px;
 }
 
-.info-section .quantity-button,
+.info-section .quantity-button1,
 .info-section .red-button {
     background-color: rgb(103, 217, 246);
     color: white;
@@ -963,6 +1002,116 @@ header {
 }
 
 
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto; 
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    font-family: 'Arial', sans-serif;
+}
+
+.modal-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.modal-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.modal-content ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-content ul li div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.modal-content ul li img {
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.modal-content p#cart-total {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.red-button {
+    background-color:  rgb(103, 217, 246);
+    color: #090909;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.red-button:hover {
+    background-color:  rgb(103, 217, 246);
+}
+
+
+.remove-item {
+    background-color:  red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.remove-item:hover {
+    background-color: darkred;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+
 .footer {
     background-color: #ffffff; 
     color: #050505; 
@@ -978,6 +1127,9 @@ header {
 .footer-well {
     flex: 0 0 calc(33.33% - 20px); 
     margin-right: 20px; 
+    color: #050505; /* Ensuring the text color is black */
+   
+    
 }
 
 .footer-well:last-child {
@@ -997,16 +1149,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px; 
+    margin-top: 25px; 
 }
 
 .footer-left {
     flex: 1; 
+    color: #817e7e; 
 }
 
 .footer-right {
     flex: 1; 
     text-align: right;
+    color: #817e7e; 
 }
 
 .footer-bottom hr {
@@ -1015,7 +1169,64 @@ header {
 }
 
 .footer-icon {
-    width: 30px; /* Adjust the size of social media icons */
+    width: 60px; /* Adjust the size of social media icons */
     height: auto; 
     margin-right: 5px; 
 }
+
+.footer-well p {
+    color: #050505; /* Ensuring the text color is black */
+    
+}
+footer .company-info {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+}
+.footer-company li {
+  list-style-type: none; /* Removes the bullets */
+  padding: 0;
+  margin: 0 0 10px 0; /* Adds spacing between the links */
+}
+
+
+.quantity-display {
+    background-color:  #490a67;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.quantity-button.minus {
+    background-color:   #490a67;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+.quantity-button.plus {
+    background-color:  #490a67;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+

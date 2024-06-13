@@ -12,13 +12,15 @@
  </script>
 
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Porter+Sans+Block&display=swap">
+
+<link href="https://fonts.cdnfonts.com/css/porter-sans-block" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/athena" rel="stylesheet">
     <!--Internal Documents-->
 <link rel="stylesheet" href="contact.css">
 
@@ -26,20 +28,21 @@
 
 <body>
   <header>
+    
     <div class="container">
-      <h1 class="header-heading"><b>Contact<span>us</span></b></h1>
+      <h1 class="header-heading">Contact<span>us</span></h1>
 
       <nav>
         <div class="container">
           
             <div class="logo">
-              <a href="homepage.html">
+              <a href="index.html">
                 <img src="assets/logo.png" alt="Red Plant Venture Logo">
             </div>
             <ul>
-                <li><a href="homepage.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="flights.html">Flight</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="contact.css" class="active">Contact</a></li>
             </ul>
             <div class="button-group">
               <div class="search-bar">
@@ -112,28 +115,42 @@
     </div>
 </div>
 
-    <section class="contact-form-section">
-        <div class="contact-form-content">
-            <h2>Send Us a Message</h2>
-            <form action="#" method="POST">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email Address" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" name="subject" placeholder="Subject" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                </div>
-                <div class="form-group">
-                    <button type="submit" class="submit-button">Submit</button>
-                </div>
-            </form>
+<section class="contact-form-section">
+    <div class="contact-form-content">
+        <h2>Send Us a Message</h2>
+        <form id="contactForm" action="#" method="POST">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Your Email Address" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- Modal Structure -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="successModalLabel">Thank you for your message!</h5><br>
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+            </div>
+           
         </div>
-    </section>
+    </div>
+</div>
+
 </div>
 
 <footer class="footer">
@@ -144,20 +161,28 @@
         explore planets in our solar<br>
         system.</p>
     </div>
-    <div class="footer-well">
+    <div class="footer-well footer-company">
       <h4>Company</h4>
-      <ul>
-        <li><a href="homepage.html">Home </a></li>
+   
+        <li><a href="index.html">Home </a></li>
         <li><a href="flights.html">Flights</a></li>
         <li><a href="contact.html">Contact</a></li>
-      </ul>
+     
     </div>
     <div class="footer-well">
       <h4>Social media links</h4>
-      <img src="assets/smInstagram.png" class="footer-icon"> 
-      <img src="assets/smX.png" class="footer-icon"> 
-      <img src="assets/smTicktock.png" class="footer-icon"> 
-      <img src="assets/smFacebook.png" class="footer-icon"> 
+      <a href="https://www.instagram.com/openwindowinstitute/" target="_blank">
+          <img src="assets/smInstagram.png" class="footer-icon"></a> 
+      
+      <a href="https://twitter.com/open_window_" target="_blank">
+          <img src="assets/smX.png" class="footer-icon"> </a> 
+
+      <a href=" https://www.tiktok.com/@open_window_" target="_blank">
+          <img src="assets/smTicktock.png" class="footer-icon"> </a> 
+     
+      <a href="https://www.facebook.com/theopenwindow" target="_blank">
+          <img src="assets/smFacebook.png" class="footer-icon">  </a> 
+      
     </div>
   </div>
   <hr>
@@ -172,7 +197,7 @@
 </footer>
 
 </section>
-
+<script src="JS/index.js"></script>
 
 </body>
 

@@ -12,13 +12,15 @@
  </script>
 
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Porter+Sans+Block&display=swap">
+
+<link href="https://fonts.cdnfonts.com/css/porter-sans-block" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/athena" rel="stylesheet">
     <!--Internal Documents-->
 <link rel="stylesheet" href="flights.css">
 
@@ -30,13 +32,13 @@
             
           <nav>
             <div class="container">
-                <H1 class="header-heading"><b>BOOK A FLIGHT</b></H1>
+                <H1 class="header-heading">BOOK A FLIGHT</H1>
                 <div class="logo">
-                  <a href="homepage.html">
+                  <a href="index.html">
                     <img src="assets/logo.png" alt="Red Plant Venture Logo">
                 </div>
                 <ul>
-                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="flights.html" class="active">Flight</a></li>
                     <li><a href="contact.html" >Contact</a></li>
                 </ul>
@@ -63,13 +65,13 @@
     <section class="filter-section">
         <button>Filter</button>
         <P>Showing 1-6 of 32 results</P>
-     <p>show <button> 9</button></p>  
+     <p>show <button>6</button></p>  
         <select>
             <option value="default">Sort by Default</option>
         </select>
     </section>
 
-    <section class="info-section6">
+    <section class="info-section6" data-id="mars-experience">
         <div class="container">
             <div class="image">
                 <img src="assets/flighhtMars.png">
@@ -92,12 +94,12 @@
                     stargazing under Phobos and Deimos. Unforgettable adventures beckon<br>
                     on the rust-colored landscapes of the Red Planet.</p>
                 <div class="button-group">
-                    <button class="quantity-button minus">-</button>
-                    <button class="quantity-button">1</button> 
-                    <button class="quantity-button plus">+</button>
-                    <button class="red-button"><b>Book Now</b></button>
+                    <button class="quantity-button6 minus" data-id="mars-experience">-</button>
+                    <button class="quantity-display6" data-id="mars-experience">1</button> 
+                    <button class="quantity-button6 plus" data-id="mars-experience">+</button>
+                    <button class="red-button book-now" data-id="mars-experience"><b>Book Now</b></button>
                 </div>
-                
+
                 <hr>
                 <div class="details">
                     <p class="gray-text">SKU: SS001</p>
@@ -106,13 +108,11 @@
                     <p class="gray-text">Date: 16 June - 19 July</p>
                 </div>
             </div>
-             
         </div>
-       
-    </section>
+ </section>
     
 
-    <section class="info-section5">
+    <section class="info-section5" data-id="cosmic-dive">
         <div class="container">
             <div class="image">
                 <img src="assets/flightNeptune.png">
@@ -132,10 +132,10 @@
                     phenomena, and savor gourmet space cuisine. An unforgettable<br>
                     adventure awaits, blending luxury with cosmic exploration.</p>
                 <div class="button-group">
-                    <button class="quantity-button minus">-</button>
-                    <button class="quantity-button">1</button> 
-                    <button class="quantity-button plus">+</button>
-                    <button class="red-button"><b>Book Now</b></button>
+                    <button class="quantity-button5 minus" data-id="cosmic-dive">-</button>
+                    <button class="quantity-display5" data-id="cosmic-dive">1</button> 
+                    <button class="quantity-button5 plus" data-id="cosmic-dive">+</button>
+                    <button class="red-button book-now" data-id="cosmic-dive"><b>Book Now</b></button>
                 </div>
                 
                 <hr>
@@ -151,13 +151,13 @@
        
     </section>
 
-    <section class="info-section4">
+    <section class="info-section4" data-id="giant's-journey">
         <div class="container">
             <div class="image">
                 <img src="assets/flightJupiter.png">
             </div>
             <div class="content">
-                <h3><b>The Giant’s Journey</b></h3>
+                <h3><b>The Giant's Journey</b></h3>
                 <p class="small-text"><b>R 65,000.00</b></p>
                 <div class="rating">
                     <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
@@ -171,10 +171,10 @@
                     surfing, comet chasing, and space excursions. Experience cosmic wonder<br>
                     in luxury, blending exploration with adventure.</p>
                 <div class="button-group">
-                    <button class="quantity-button minus">-</button>
-                    <button class="quantity-button">1</button> 
-                    <button class="quantity-button plus">+</button>
-                    <button class="red-button"><b>Book Now</b></button>
+                    <button class="quantity-button4 minus" data-id="giant's-journey">-</button>
+                    <button class="quantity-display4" data-id="giant's-journey">1</button> 
+                    <button class="quantity-button4 plus" data-id="giant's-journey">+</button>
+                    <button class="red-button book-now" data-id="giant's-journey"><b>Book Now</b></button>
                 </div>
                 
                 <hr>
@@ -191,7 +191,7 @@
     </section>
     
 
-    <section class="info-section3">
+    <section class="info-section3" data-id="saturn">
         <div class="container">
             <div class="image">
                 <img src="assets/flightSaturn.png">
@@ -212,10 +212,10 @@
                     amidst luxurious accommodations, where the thrill of discovery<br>
                     intertwines seamlessly with the excitement of adventure.</p>
                 <div class="button-group">
-                    <button class="quantity-button minus">-</button>
-                    <button class="quantity-button">1</button> 
-                    <button class="quantity-button plus">+</button>
-                    <button class="red-button"><b>Book Now</b></button>
+                    <button class="quantity-button3 minus" data-id="saturn">-</button>
+                    <button class="quantity-display3" data-id="saturn">1</button> 
+                    <button class="quantity-button3 plus" data-id="saturn">+</button>
+                    <button class="red-button book-now" data-id="saturn"><b>Book Now</b></button>
                 </div>
                 
                 <hr>
@@ -232,8 +232,8 @@
     </section>
     
 
-    <section class="info-section2">
-        <div class="container2">
+    <section class="info-section2" data-id="uranus">
+        <div class="container">
             <div class="image">
                 <img src="assets/flightUranus.png">
             </div>
@@ -253,10 +253,10 @@
                     accommodations and expert guides, discover the wonders of Uranus in a<br>
                     journey of a lifetime</p>
                 <div class="button-group">
-                    <button class="quantity-button minus2">-</button>
-                    <button class="quantity-button2">1</button>
-                    <button class="quantity-button plus2">+</button>
-                    <button class="red-button">Book Now</button>
+                    <button class="quantity-button2 minus" data-id="uranus">-</button>
+                    <button class="quantity-display2" data-id="uranus">1</button>
+                    <button class="quantity-button2 plus" data-id="uranus">+</button>
+                    <button class="red-button book-now" data-id="uranus"><b>Book Now</b></button>
                 </div>
                 
                 <hr>
@@ -274,7 +274,7 @@
     
 
 
-    <section class="info-section">
+    <section class="info-section" data-id="moonlight">
         <div class="container">
             <div class="image">
                 <img src="assets/flightMoon.png">
@@ -295,10 +295,10 @@
                     glow. Immerse yourself in luxury accommodations amidst the tranquility<br>
                     of space</p>
                 <div class="button-group">
-                    <button class="quantity-button minus">-</button>
-                    <button class="quantity-button">1</button> 
-                    <button class="quantity-button plus">+</button>
-                    <button class="red-button"><b>Book Now</b></button>
+                    <button class="quantity-button1 minus" data-id="moonlight">-</button>
+                    <button class="quantity-display1" data-id="moonlight">1</button> 
+                    <button class="quantity-button1 plus" data-id="moonlight">+</button>
+                    <button class="red-button book-now" data-id="moonlight"><b>Book Now</b></button>
                 </div>
                 
                 <hr>
@@ -314,8 +314,25 @@
        
     </section>
     
-<button class="view-cart-button"><b>View Cart</b></button>
+    <button class="view-cart-button"><b>View Cart</b></button>
 
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be inserted here -->
+            </ul>
+            <p id="cart-total">Total: R 0.00</p>
+            <div class="button-group">
+                <button id="continue-shopping" class="red-button"><b>Continue Shopping</b></button>
+                <button id="checkout" class="red-button"><b>Checkout</b></button>
+            </div>
+        </div>
+    </div>
+    
+    
 <footer class="footer">
     <div class="footer-container">
       <div class="footer-well">
@@ -324,21 +341,31 @@
           explore planets in our solar<br>
           system.</p>
       </div>
-      <div class="footer-well">
+      <div class="footer-well footer-company">
         <h4>Company</h4>
-        <ul>
-          <li><a href="homepage.html">Home </a></li>
+     
+          <li><a href="index.html">Home </a></li>
           <li><a href="flights.html">Flights</a></li>
           <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+       
+      </div> 
       <div class="footer-well">
         <h4>Social media links</h4>
-        <img src="assets/smInstagram.png" class="footer-icon"> 
-        <img src="assets/smX.png" class="footer-icon"> 
-        <img src="assets/smTicktock.png" class="footer-icon"> 
-        <img src="assets/smFacebook.png" class="footer-icon"> 
+        <a href="https://www.instagram.com/openwindowinstitute/" target="_blank">
+            <img src="assets/smInstagram.png" class="footer-icon"></a> 
+        
+        <a href="https://twitter.com/open_window_" target="_blank">
+            <img src="assets/smX.png" class="footer-icon"> </a> 
+
+        <a href=" https://www.tiktok.com/@open_window_" target="_blank">
+            <img src="assets/smTicktock.png" class="footer-icon"> </a> 
+       
+        <a href="https://www.facebook.com/theopenwindow" target="_blank">
+            <img src="assets/smFacebook.png" class="footer-icon">  </a> 
+        
       </div>
+
+
     </div>
     <hr>
     <div class="footer-bottom">
@@ -350,11 +377,10 @@
       </div>
     </div>
   </footer>
-  
 
 </section>
 
-
+<script src="JS/index.js"></script>
 </body>
 
 

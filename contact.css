@@ -1,11 +1,11 @@
 .header-heading {
     position: absolute;
-    bottom: 45%; 
+    bottom: 30%; 
     left: 50%; 
     transform: translate(-50%, 50%); 
     color: rgb(255, 255, 255); 
     margin: 0; 
-    font-size: 50px; 
+    font-size: 40px; 
     font-family: 'Porter Sans Block', sans-serif;
     text-align: center; 
 }
@@ -282,7 +282,6 @@ p {
 .contact-form-section {
     flex: 1;
     padding: 150px 20px;
-    background-image: url('assets/formBack.png');
     background-size: cover;
     background-position: center;
     color: white;
@@ -290,8 +289,9 @@ p {
 }
 
 .contact-form-content {
-    max-width: 250px;
+    max-width: 500px;
     margin: 0 auto;
+    background-image: url('assets/formBack.png');
 }
 
 .contact-form-content h2 {
@@ -356,6 +356,9 @@ p {
 .footer-well {
     flex: 0 0 calc(33.33% - 20px); 
     margin-right: 20px; 
+    color: #050505; /* Ensuring the text color is black */
+   
+    
 }
 
 .footer-well:last-child {
@@ -375,16 +378,18 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px; 
+    margin-top: 25px; 
 }
 
 .footer-left {
     flex: 1; 
+    color: #817e7e; 
 }
 
 .footer-right {
     flex: 1; 
     text-align: right;
+    color: #817e7e; 
 }
 
 .footer-bottom hr {
@@ -393,7 +398,22 @@ p {
 }
 
 .footer-icon {
-    width: 30px; /* Adjust the size of social media icons */
+    width: 60px; /* Adjust the size of social media icons */
     height: auto; 
     margin-right: 5px; 
+}
+
+.footer-well p {
+    color: #050505; /* Ensuring the text color is black */
+    
+}
+footer .company-info {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+}
+.footer-company li {
+  list-style-type: none; /* Removes the bullets */
+  padding: 0;
+  margin: 0 0 10px 0; /* Adds spacing between the links */
 }
