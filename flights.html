@@ -22,12 +22,12 @@
 <link href="https://fonts.cdnfonts.com/css/porter-sans-block" rel="stylesheet">
 <link href="https://fonts.cdnfonts.com/css/athena" rel="stylesheet">
     <!--Internal Documents-->
-<link rel="stylesheet" href="flights.css">
+<link rel="stylesheet" href="../css/flights.css">
 
 </head>
 
 <body>
-    <header>
+    <header style="background-image: url('assets/headerbackBack.png');"">
         <div class="container">
             
           <nav>
@@ -63,13 +63,23 @@
     </header>
 
     <section class="filter-section">
-        <button>Filter</button>
-        <P>Showing 1-6 of 32 results</P>
-     <p>show <button>6</button></p>  
-        <select>
-            <option value="default">Sort by Default</option>
+        <button id="filter-button">Filter</button>
+        <p>Showing <span id="result-count">1-6</span> of <span id="total-results">32</span> results</p>
+        <p>Show 
+            <select id="results-per-page">
+                <option value="6">6</option>
+                <option value="12">12</option>
+                <option value="24">24</option>
+            </select>
+        </p>
+        <select id="sort-options">
+            <option id="default">Sort by Default</option>
+            <option id="price-asc">Sort by Price: Low to High</option>
+            <option id="price-desc">Sort by Price: High to Low</option>
+            <option id="rating">Sort by Rating</option>
         </select>
     </section>
+    
 
     <section class="info-section6" data-id="mars-experience">
         <div class="container">
@@ -345,7 +355,7 @@
         <h4>Company</h4>
      
           <li><a href="index.html">Home </a></li>
-          <li><a href="flights.html">Flights</a></li>
+          <li><a href="flights.html" class="active">Flights</a></li>
           <li><a href="contact.html">Contact</a></li>
        
       </div> 

@@ -61,6 +61,14 @@ a:hover {
     color: red; 
 }
 
+.basket-button .total-ticket-in-cart {
+    margin-left: 10px;
+    padding: 5px;
+    background-color: rgb(242, 255, 58);
+    border-radius: 5px;
+  }
+  
+
 header {
     background-image: url('assets/headerbackBack.png'); 
     background-size: cover;
@@ -73,7 +81,7 @@ header {
     
     .filter-section {
         background-color: #3d0764;
-        padding: 10px 20px; /* Adjusted padding for better spacing */
+        padding: 10px 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -86,12 +94,37 @@ header {
         background-color: #5e2b97;
         border: none;
         color: white;
-        padding: 10px 20px; /* Adjusted padding for better spacing */
+        padding: 10px 20px;
         cursor: pointer;
-        margin-left: 10px; /* Added margin for better spacing between buttons */
+        margin-left: 10px;
+        border-radius: 5px;
     }
     
-
+    .filter-section p {
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+    
+    .filter-section #results-per-page {
+        margin-left: 5px;
+        padding: 5px 10px;
+        background-color: #5e2b97;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .filter-section #sort-options {
+        padding: 5px 10px;
+        background-color: #5e2b97;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+    
 
 .container {
     display: flex;
@@ -250,13 +283,14 @@ header {
     font-size: 16px;
     cursor: pointer;
     margin-right: 10px;
+    
 }
 
 .quantity-display6 {
     background-color:  #490a67;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 20px 20px;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
@@ -276,6 +310,7 @@ header {
     display: flex;
     align-items: center;
     margin-top: 20px;
+    justify-content: flex-start;
 }
 
 .info-section6 .quantity-display,
@@ -283,9 +318,9 @@ header {
     background-color: #490a67(103, 217, 246);
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 20px 60px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
     margin-right: 10px;
 }
@@ -394,7 +429,7 @@ header {
     background-color:  rgb(103, 217, 246);
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 20px 20px;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
@@ -414,6 +449,7 @@ header {
     display: flex;
     align-items: center;
     margin-top: 20px;
+    justify-content: flex-start;
 }
 
 .info-section5 .quantity-button2,
@@ -421,9 +457,9 @@ header {
     background-color: rgb(103, 217, 246);
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 20px 60px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
     margin-right: 10px;
 }
@@ -530,7 +566,7 @@ header {
     background-color:  #490a67;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 20px 20px;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
@@ -551,6 +587,7 @@ header {
     display: flex;
     align-items: center;
     margin-top: 20px;
+    justify-content: flex-start;
 }
 
 .info-section4 .quantity-button,
@@ -558,9 +595,9 @@ header {
     background-color: #490a67(103, 217, 246);
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 20px 60px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
     margin-right: 10px;
 }
@@ -669,7 +706,7 @@ header {
     background-color:  rgb(103, 217, 246);
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 20px 20px;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
@@ -689,6 +726,7 @@ header {
     display: flex;
     align-items: center;
     margin-top: 20px;
+    justify-content: flex-start;
 }
 
 .info-section3 .quantity-button,
@@ -696,9 +734,9 @@ header {
     background-color: rgb(103, 217, 246);
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 20px 60px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
     margin-right: 10px;
 }
@@ -807,7 +845,7 @@ header {
     background-color:  #490a67; 
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 20px 20px;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
@@ -828,6 +866,7 @@ header {
     display: flex;
     align-items: center;
     margin-top: 20px;
+    justify-content: flex-start;
 }
 
 .info-section2 .quantity-button,
@@ -835,9 +874,9 @@ header {
     background-color: red(103, 217, 246);
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 20px 60px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
     margin-right: 10px;
 }
@@ -935,13 +974,22 @@ header {
     background-color: rgb(103, 217, 246);
     color: white;
     border: none;
+    padding: 20px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.quantity-button1 {
+    background-color: rgb(103, 217, 246);
+    color: white;
+    border: none;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     margin-right: 10px;
 }
-
 
 .quantity-button.minus {
     margin-right: 0; 
@@ -955,16 +1003,17 @@ header {
     display: flex;
     align-items: center;
     margin-top: 20px;
+    justify-content: flex-start;
 }
 
-.info-section .quantity-button1,
+.info-section .quantity-button,
 .info-section .red-button {
     background-color: rgb(103, 217, 246);
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 20px 60px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
     margin-right: 10px;
 }
@@ -990,15 +1039,16 @@ header {
 
 .view-cart-button {
     position: absolute;
-    top: 4550px; 
+    top: 4600px; 
     right: 20px; 
     background-color: red;
     color: white;
-    padding: 10px 20px;
+    padding: 20px 60px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
+    opacity: 70%;
 }
 
 

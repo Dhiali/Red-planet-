@@ -22,12 +22,12 @@
 <link href="https://fonts.cdnfonts.com/css/porter-sans-block" rel="stylesheet">
 <link href="https://fonts.cdnfonts.com/css/athena" rel="stylesheet">
     <!--Internal Documents-->
-<link rel="stylesheet" href="contact.css">
+<link rel="stylesheet" href="css/contact.css">
 
 </head>
 
 <body>
-  <header>
+  <header style="background-image: url('assets/headerbackBack.png');">
     
     <div class="container">
       <h1 class="header-heading">Contact<span>us</span></h1>
@@ -36,13 +36,13 @@
         <div class="container">
           
             <div class="logo">
-              <a href="index.html">
+              <a href="../pages/index.html">
                 <img src="assets/logo.png" alt="Red Plant Venture Logo">
             </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="flights.html">Flight</a></li>
-                <li><a href="contact.css" class="active">Contact</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
             <div class="button-group">
               <div class="search-bar">
@@ -89,54 +89,72 @@
 </section>
 
 <div class="container">
- 
-    <div class="social-media-maps-container">
-        <section class="social-media-section">
-            <div class="social-media-content">
-                <div class="small-text3"><b>CONTACT US THROUGH OUR</b></div>
-                <h2><b>SOCIAL MEDIA PAGES</b></h2>
-                <div class="social-media-icons">
-                    <img src="assets/smInstagram.png" >
-                    <img src="assets/smX.png" >
-                    <img src="assets/smTicktock.png" >
-                    <img src="assets/smFacebook.png">
+    <div class="row">
+        <!-- Left Section -->
+        
+            <section class="social-media-section">
+                <div class="col-lg-10">
+                <div class="social-media-content">
+                    <div class="small-text3"><b>CONTACT US THROUGH OUR</b></div>
+                    <h2><b>SOCIAL MEDIA PAGES</b></h2>
+                    <div class="social-media-icons">
+                        <img src="assets/smInstagram.png">
+                        <img src="assets/smX.png">
+                        <img src="assets/smTicktock.png">
+                        <img src="assets/smFacebook.png">
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="maps-section">
-            <div class="maps-content">
-                <div class="small-text2"><b>OR VISIT US AT OUR</b></div>
-                <h2><b>PHYSICAL LOCATION</b></h2>
-                
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.321356159242!2d28.20695667418683!3d-25.89180435132163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956608911ce097%3A0x519896b4b6eda40a!2sOpen%20Window%20-%20Centurion!5e0!3m2!1sen!2sza!4v1712295742464!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
+            <section class="maps-section">
+                <div class="maps-content">
+                    <div class="small-text2"><b>OR VISIT US AT OUR</b></div>
+                    <h2><b>PHYSICAL LOCATION</b></h2>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.321356159242!2d28.20695667418683!3d-25.89180435132163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956608911ce097%3A0x519896b4b6eda40a!2sOpen%20Window%20-%20Centurion!5e0!3m2!1sen!2sza!4v1712295742464!5m2!1sen!2sza"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Right Section -->
+       
+            <section class="contact-form-section">
+                <div class="col-lg-10">
+                <div class="contact-form-content" style="background-image: url('assets/formBack.png');">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1" class="form-label">Your name</label>
+                            <input type="text" class="form-control" name="name" placeholder="ABC" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" name="email" placeholder="ACB@XYZ.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1" class="form-label">Subject</label>
+                            <input type="text" class="form-control" name="subject" placeholder="This is optional"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1" class="form-label">Message</label>
+                            <textarea class="form-control" name="message" placeholder="Hi! I'd like to ask about..."
+                                rows="5" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="submit-button">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
     </div>
 </div>
 
-<section class="contact-form-section">
-    <div class="contact-form-content">
-        <h2>Send Us a Message</h2>
-        <form id="contactForm" action="#" method="POST">
-            <div class="form-group">
-                <input type="text" name="name" placeholder="Your Name" required>
-            </div>
-            <div class="form-group">
-                <input type="email" name="email" placeholder="Your Email Address" required>
-            </div>
-            <div class="form-group">
-                <input type="text" name="subject" placeholder="Subject" required>
-            </div>
-            <div class="form-group">
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-            </div>
-            <div class="form-group">
-                <button type="submit" class="submit-button">Submit</button>
-            </div>
-        </form>
-    </div>
-</section>
+
 
 <!-- Modal Structure -->
 <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
@@ -166,7 +184,7 @@
    
         <li><a href="index.html">Home </a></li>
         <li><a href="flights.html">Flights</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
      
     </div>
     <div class="footer-well">

@@ -70,13 +70,22 @@ a:hover {
 }
 
 header {
-    background-image: url('assets/homePageHeader.png'); 
+    background-image: url('...assets/homePageHeader.png'); 
     background-size: cover;
     background-position: center;
     height: 100vh; 
     padding: 20px;
     position: relative; } 
 
+.header img{
+
+  background-image: url('...assets/homePageHeader.png'); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh; 
+  padding: 20px;
+  position: relative; 
+}
 
 
 .container {
@@ -159,8 +168,7 @@ header {
 }
 
 .about-image img {
-
-  border-radius: 15px; /* Adjust the value as needed */
+  border-radius: 15px; 
 
 }
 
@@ -230,7 +238,7 @@ header {
 .history-heading,
 .goals-heading {
   text-align: center;
-  font-family: 'Abril Fatface', cursive;
+ 
   font-size: 2rem;
   margin-bottom: 20px;
   color: #000;
@@ -299,46 +307,24 @@ header {
 
 .goal {
   background-color: #fff;
-  padding: 26px;
+  padding: 29px;
   border-radius: 8px;
   border: 2px solid #490a67;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .goal h3 {
-  font-family: 'Titillium Web', sans-serif;
   font-size: 1.5rem;
   margin-bottom: 10px;
   color: #000;
 }
 
 .goal p {
-  font-family: 'Titillium Web', sans-serif;
   font-size: 1rem;
   color: #666;
 }
 
-@media (max-width: 768px) {
-  .columns {
-      flex-direction: column;
-  }
-  
-  .timeline-event {
-      padding-left: 30px;
-  }
-  
-  .timeline-date {
-      font-size: 1rem;
-  }
-  
-  .timeline-content h3 {
-      font-size: 1.2rem;
-  }
-  
-  .timeline-content p {
-      font-size: 0.9rem;
-  }
-}
+
 
 
 .main-section {
@@ -367,7 +353,7 @@ header {
 }
 
 .carousel {
-  width: 50%; /* Ensure the carousel takes half the container */
+  width: 50%;
   position: relative;
 }
 
@@ -393,7 +379,7 @@ header {
 .content {
   flex: 1; 
   margin-left: 60px; 
-  width: 50%; /* Ensure the content takes half the container */
+  width: 50%; 
   padding: 0 20px;
 }
 
@@ -418,9 +404,9 @@ p {
   background-color: red;
   color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 16px;
+  padding: 20px 60px;
+  border-radius: 10px;
+  font-size: 20px;
   cursor: pointer;
   margin-top: 20px;
 }
@@ -428,7 +414,9 @@ p {
   height: 100vh; 
   background-color: white; 
 }
-
+.second-section p{
+  color:#000; 
+}
 
 .second-section .content {
   flex: 1; 
@@ -456,10 +444,19 @@ p {
   
 
   .third-section {
-    height: 128vh;
+    height: 140vh;
     background-color: #490a67; 
   }
+
+  .third-section .small-text {
+    color: rgb(103, 217, 246);
+  }
   
+ 
+.third-section h3 {
+  color: white; 
+}
+
   .third-section .container {
     display: flex;
     flex-direction: column;
@@ -468,12 +465,15 @@ p {
     padding-top: 50px; 
     padding-bottom: 50px; 
   }
+ 
+
   
   .third-section .content {
     text-align: center;
     margin-bottom: 30px; 
     margin-top: 30px;
     margin-left: 20px;  
+    color:#ffffff;
   }
 
   
@@ -524,7 +524,7 @@ p {
 .footer-well {
     flex: 0 0 calc(33.33% - 20px); 
     margin-right: 20px; 
-    color: #050505; /* Ensuring the text color is black */
+    color: black; 
    
     
 }
@@ -538,7 +538,7 @@ p {
 }
 
 .footer-logo {
-    width: 250px; /* Adjusted to be 5 times bigger */
+    width: 250px;
     height: auto; 
 }
 
@@ -566,13 +566,13 @@ p {
 }
 
 .footer-icon {
-    width: 60px; /* Adjust the size of social media icons */
+    width: 60px; 
     height: auto; 
     margin-right: 5px; 
 }
 
 .footer-well p {
-    color: #050505; /* Ensuring the text color is black */
+    color: black;
     
 }
 footer .company-info {
@@ -581,7 +581,7 @@ footer .company-info {
   margin: 5px 0;
 }
 .footer-company li {
-  list-style-type: none; /* Removes the bullets */
+  list-style-type: none; 
   padding: 0;
-  margin: 0 0 10px 0; /* Adds spacing between the links */
+  margin: 0 0 10px 0;
 }
